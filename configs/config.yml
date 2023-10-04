@@ -1,0 +1,9 @@
+port: "8000"
+
+db:
+  username: "postgres"
+  password: "vCPsvgmGJZOXcimQfrVh34aCxoiVWJyE7R2VhCS0"
+  host: "localhost"
+  port: "5632"
+  dbname: "photo-bank"
+  sslmode: "disable"
