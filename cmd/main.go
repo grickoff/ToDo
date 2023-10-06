@@ -12,11 +12,10 @@ func main() {
 	if err := initConfig(); err != nil {
 		logrus.Fatalf("error initializing configs: %s", err.Error())
 	}
+}
 
-
-	func initConfig() error {
-		viper.AddConfigPath("configs")
-		viper.SetConfigName("config")
-		return viper.ReadInConfig()
-	}
+func initConfig() error {
+	viper.AddConfigPath("configs")
+	viper.SetConfigName("config")
+	return viper.ReadInConfig()
 }
