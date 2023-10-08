@@ -2,8 +2,8 @@ port: "8000"
 
 db:
   username: "postgres"
-  password: "vCPsvgmGJZOXcimQfrVh34aCxoiVWJyE7R2VhCS0"
+  password: "111"
   host: "localhost"
   port: "5632"
-  dbname: "photo-bank"
+  dbname: "to-do"
   sslmode: "disable"
