@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"github.com/grickoff/todo/internal/auth/controller"
 	"github.com/grickoff/todo/internal/auth/storage"
 	"github.com/grickoff/todo/internal/auth/usecases"
@@ -28,8 +29,13 @@ func main() {
 	authControllers := controller.NewAuthController(authService)
 
 	fmt.Println(authControllers)
-	//TODO: Реализовать старт сервера на gin
-	//TODO: Реализовать контроллер + Юзкейс + стор
+	//TODO: Реализовать старт сервера на gin +++
+	r := gin.Default()
+	r.Run(":3000")
+
+	// r.GET("/", func(c *gin.Context))
+
+	//TODO: Реализовать контроллер + Юзкейс + стор +++
 }
 
 func initConfig() error {
